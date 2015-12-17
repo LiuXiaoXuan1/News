@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardCornerRadius="0.0dp"
+        cardview:cardElevation="2.0dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="手机注册"
+                android:textSize="18sp"
+                android:textColor="@color/black_light" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llt1"
+        android:layout_below="@+id/cardview"
+        android:layout_margin="@dimen/common_margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textSize="18sp"
+            android:textColor="@color/black_light"/>
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/common_margin_5"
+            android:background="@drawable/background_border_lines"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt2"
+        android:layout_below="@+id/llt1"
+        android:layout_margin="@dimen/common_margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:textSize="18sp"
+            android:textColor="@color/black_light"/>
+
+        <EditText
+            android:id="@+id/edt_check"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/common_margin_5"
+            android:background="@drawable/background_border_lines"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/black_light"
+            android:textSize="16sp"
+            android:background="@drawable/bg_border_select"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/llt2"
+        android:layout_margin="@dimen/common_margin_16"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="完成"
+            android:textSize="18sp"
+            android:textColor="@color/black_light"
+            android:background="@drawable/bg_border_select"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
