@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_above="@+id/relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/custom_margin_52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.01元"
+        android:textSize="30sp"
+        android:textColor="@color/black_light"/>
+
+    <TextView
+        android:layout_above="@+id/relativelayout"
+        android:layout_marginLeft="@dimen/common_margin_16"
+        android:layout_marginBottom="@dimen/common_margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择以下一种方式付款：" />
+
+   <RelativeLayout
+       android:id="@+id/relativelayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true">
+
+       <RelativeLayout
+           android:id="@+id/rlt_wechat"
+           android:padding="@dimen/common_padding_16"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_white_select">
+
+           <ImageView
+               android:id="@+id/iv_wechat"
+               android:layout_width="@dimen/custom_view_width_50"
+               android:layout_height="@dimen/custom_view_height_50"
+               android:src="@mipmap/icon_wechat_pay"/>
+
+           <TextView
+               android:id="@+id/tv_wechat"
+               android:layout_toRightOf="@+id/iv_wechat"
+               android:layout_marginLeft="@dimen/common_margin_16"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:text="微信支付"
+               android:textSize="20sp"/>
+
+           <ImageView
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:src="@mipmap/icon_enter"/>
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/rlt_zhifubao"
+           android:layout_below="@+id/rlt_wechat"
+           android:padding="@dimen/common_padding_16"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_top_select">
+
+           <ImageView
+               android:id="@+id/iv_zhifubao"
+               android:layout_width="@dimen/custom_view_width_40"
+               android:layout_height="@dimen/custom_view_height_40"
+               android:src="@mipmap/icon_zhifubao_pay"/>
+
+           <TextView
+               android:id="@+id/tv_zhifubao"
+               android:layout_toRightOf="@+id/iv_zhifubao"
+               android:layout_marginLeft="@dimen/common_margin_16"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:text="支付宝支付"
+               android:textSize="20sp"/>
+
+           <ImageView
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:src="@mipmap/icon_enter"/>
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+</RelativeLayout>
