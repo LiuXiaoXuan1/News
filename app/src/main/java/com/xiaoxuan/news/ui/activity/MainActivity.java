@@ -1,6 +1,5 @@
 package com.xiaoxuan.news.ui.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -36,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_subcribe) {//订阅事件，跳到支付页面
-            startActivity(new Intent(this, PayActivity.class));
+        if (id == R.id.action_settings) {
             return true;
         }
 
